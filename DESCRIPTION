@@ -1,0 +1,15 @@
+Package: atClean
+Type: Package
+Title: Methods for cleaning data
+Version: 0.1.0
+Author: Andrew Taylor
+Maintainer: Andrew Taylor <taylor.andrew.r@gmail.com>
+Description: Methods for cleaning data including removing outliers, collapsing
+    or exanding data, cleaning character data, and dealing withh factors.
+License: CC0
+LazyData: TRUE
+Import: dplyr
+RoxygenNote: 5.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
