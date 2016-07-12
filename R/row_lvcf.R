@@ -9,6 +9,9 @@
 #' @examples
 #' # Needs an example
 row_lvcf <- function(data, cols) {
+ if(length(cols)<2) {
+        print("cols must index at least two columns")
+    } else {
   #initialize at the second column
   i = 2
   #per column
@@ -26,4 +29,5 @@ row_lvcf <- function(data, cols) {
   }
   #return the lvcf dataset
   return(onecol(data, i))
+  }
 }
