@@ -9,6 +9,7 @@
 #' @examples
 #' # Needs an example
 row_lvcf <- function(data, cols) {
+ data <- as.data.frame(data)
  if(length(cols)<2) {
         print("cols must index at least two columns")
     } else {
